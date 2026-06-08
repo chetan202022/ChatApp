@@ -3,8 +3,8 @@ import http from "http";
 import express from "express";
 import Message from "../models/message.model.js";
 
-import { createClient } from "redis";
-import { createAdapter } from "@socket.io/redis-adapter";
+// import { createClient } from "redis";
+// import { createAdapter } from "@socket.io/redis-adapter";
 
 const app = express();
 const server = http.createServer(app);
@@ -16,34 +16,34 @@ const io = new Server(server, {
   },
 });
 
-async function setupRedis() {
-  try {
-    const pubClient = createClient({
-      url: "redis://localhost:6379",
-    });
+// async function setupRedis() {
+//   try {
+//     const pubClient = createClient({
+//       url: "redis://localhost:6379",
+//     });
 
-    const subClient = pubClient.duplicate();
+//     const subClient = pubClient.duplicate();
 
-    pubClient.on("error", (err) =>
-      console.log("Redis Pub Error:", err)
-    );
+//     pubClient.on("error", (err) =>
+//       console.log("Redis Pub Error:", err)
+//     );
 
-    subClient.on("error", (err) =>
-      console.log("Redis Sub Error:", err)
-    );
+//     subClient.on("error", (err) =>
+//       console.log("Redis Sub Error:", err)
+//     );
 
-    await pubClient.connect();
-    await subClient.connect();
+//     await pubClient.connect();
+//     await subClient.connect();
 
-    io.adapter(createAdapter(pubClient, subClient));
+//     io.adapter(createAdapter(pubClient, subClient));
 
-    console.log("Redis adapter connected successfully");
-  } catch (error) {
-    console.log("Redis setup error:", error);
-  }
-}
+//     console.log("Redis adapter connected successfully");
+//   } catch (error) {
+//     console.log("Redis setup error:", error);
+//   }
+// }
 
-setupRedis();
+// setupRedis();
 
 const users = new Map();
 
