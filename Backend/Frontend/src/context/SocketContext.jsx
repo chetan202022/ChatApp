@@ -21,7 +21,7 @@ export const SocketProvider = ({ children }) => {
     let socketInstance = null;
 
     if (authUser?.user?._id) {
-      socketInstance = io("http://localhost:4002", {
+      socketInstance = io("https://chatapp-j4hc.onrender.com", {
         query: {
           userId: authUser.user._id,
         },

@@ -83,12 +83,12 @@ export const verifyEmail = async (req, res) => {
 
     // Already verified case
     if (user.isVerified) {
-      createTokenAndSaveCookie(user._id, res);
+  createTokenAndSaveCookie(user._id, res);
 
-      return res.redirect(
-        "http://localhost:3001/verify-success"
-      );
-    }
+  return res.redirect(
+    `${process.env.FRONTEND_URL}/verify-success`
+  );
+}
 
     // Verify user
     user.isVerified = true;
@@ -101,7 +101,7 @@ export const verifyEmail = async (req, res) => {
 
     // Redirect to verify-success page
     return res.redirect(
-      "http://localhost:3001/verify-success"
+      `${process.env.FRONTEND_URL}/verify-success`
     );
 
   } catch (error) {

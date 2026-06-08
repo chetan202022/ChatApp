@@ -9,7 +9,7 @@ export const sendVerificationEmail = async (email, token) => {
     },
   });
 
-  const verifyUrl = `http://localhost:4002/api/user/verify/${token}`;
+  const verifyUrl = `${process.env.BACKEND_URL}/api/user/verify/${token}`;
 
   await transporter.sendMail({
     from: process.env.EMAIL,

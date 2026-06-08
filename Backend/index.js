@@ -18,7 +18,7 @@ app.use(cookieParser());
 // ✅ FIXED CORS
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: process.env.FRONTEND_URL,
     credentials: true,
   })
 );
