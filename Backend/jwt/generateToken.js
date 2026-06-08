@@ -11,8 +11,8 @@ const createTokenAndSaveCookie = (userId, res) => {
 
   res.cookie("jwt", token, {
     httpOnly: true,
-    secure: false, // localhost => false
-    sameSite: "lax", // important for redirect login
+    secure: true, // for localhost => false
+    sameSite: "none", // important for redirect login
     maxAge: 10 * 24 * 60 * 60 * 1000, // 10 days
   });
 };
