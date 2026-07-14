@@ -2,8 +2,12 @@
 
 A full-stack real-time chat application built with the MERN stack and Socket.IO, delivering instant messaging with a focus on reliability, security, and user experience.
 
-[![Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-0078D4?style=for-the-badge)](https://chatapp-j4hc.onrender.com)
-[![Source Code](https://img.shields.io/badge/Source%20Code-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=555555)](https://github.com/chetan202022/ChatApp)
+<a href="https://chatapp-j4hc.onrender.com" target="_blank">
+  <img src="https://img.shields.io/badge/🚀-Live%20Demo-0078D4?style=for-the-badge" alt="Live Demo">
+</a>
+<a href="https://github.com/chetan202022/ChatApp" target="_blank">
+  <img src="https://img.shields.io/badge/Source%20Code-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=555555" alt="Source Code">
+</a>
 
 ---
 
