@@ -219,20 +219,26 @@ Performance testing conducted using Apache JMeter and Artillery demonstrates rob
 ```
 ChatApp/
 ├── Backend/
+│   ├── SocketIO
+│   ├── controller/
+│   ├── jwt/
+│   ├── middleware/
 │   ├── models/
 │   ├── routes/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── config/
-│   └── server.js
+│   ├── tests/
+│   ├── tests/
+│   ├── cluster.js
+│   └── index.js
 ├── Frontend/
+│   ├── public/
 │   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   ├── store/
 │   │   ├── utils/
 │   │   └── App.jsx
-│   └── public/
+│   └── index.html
+├── Screenshots/
 └── README.md
 ```
 
