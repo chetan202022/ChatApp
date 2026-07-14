@@ -13,13 +13,13 @@ A full-stack real-time chat application built with the MERN stack and Socket.IO,
 
 | Login | Sign Up |
 |--------|---------|
-| <img src="./screenshots/login.png" width="100%"> | <img src="./screenshots/signup.png" width="100%"> |
+| <img src="./Screenshots/login.png" width="100%"> | <img src="./Screenshots/signup.png" width="100%"> |
 
 ### 💬 Chat Experience
 
 | Home | Chat Window |
 |------|-------------|
-| <img src="./screenshots/home.png" width="100%"> | <img src="./screenshots/chat.png" width="100%"> |
+| <img src="./Screenshots/home.png" width="100%"> | <img src="./Screenshots/chats.png" width="100%"> |
 
 ---
 
